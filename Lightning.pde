@@ -1,6 +1,8 @@
 void setup()
 {
   size(300,300);
+  background(0,0,0);
+  strokeWeight(126);
 }
 void draw()
 {

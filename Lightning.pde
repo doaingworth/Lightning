@@ -40,7 +40,7 @@ void lightning() {
   move2++;
   if (move2 == 10) {
     clear();
-    color(255, 255, 0);
+    //color(255, 255, 0);
     //LightningThread lightning = LightningThread.createAndStart("Lightning");
     strokeWeight(10);
     stroke(153);
@@ -75,7 +75,7 @@ void snake() {
     //snakeSegments = addX((int) snakeSegments.length, snakeSegments, snakePosition);
     
     System.out.println(snakePosition);
-    color(0, 255, 0);
+    //color(0, 255, 0);
     /*for (int n = 0; n <= snakeSegments.length/2; n++) {
       square(snakeSegments[n][0], snakeSegments[n][1], 10);
     }*/

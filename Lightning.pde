@@ -74,7 +74,7 @@ void snake() {
 
     //snakeSegments = addX((int) snakeSegments.length, snakeSegments, snakePosition);
     
-    System.out.println(snakePosition);
+    //System.out.println(snakePosition);
     //color(0, 255, 0);
     /*for (int n = 0; n <= snakeSegments.length/2; n++) {
       square(snakeSegments[n][0], snakeSegments[n][1], 10);

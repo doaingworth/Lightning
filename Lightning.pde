@@ -33,13 +33,13 @@ void setup()
 void draw()
 {
   lightning();
-  snake();
+  //snake();
 }
 
 void lightning() {
   move2++;
   if (move2 == 10) {
-    clear();
+    //clear();
     //color(255, 255, 0);
     //LightningThread lightning = LightningThread.createAndStart("Lightning");
     strokeWeight(10);
@@ -111,7 +111,7 @@ public static int[][] addX(int n, int[][] arr, int[] x) {
   endX = 150;
 }*/
 
-void keyPressed() {
+/*void keyPressed() {
   if (key == CODED) {
     if (keyCode == UP) {
       changeDirection = "up";
@@ -123,7 +123,7 @@ void keyPressed() {
       changeDirection = "right";
     }
   }
-}
+}*/
 
 /*public class LightningThread implements Runnable {
  

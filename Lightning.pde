@@ -111,7 +111,7 @@ public static int[][] addX(int n, int[][] arr, int[] x) {
   endX = 150;
 }*/
 
-/*void keyPressed() {
+void keyPressed() {
   if (key == CODED) {
     if (keyCode == UP) {
       changeDirection = "up";
@@ -123,7 +123,7 @@ public static int[][] addX(int n, int[][] arr, int[] x) {
       changeDirection = "right";
     }
   }
-}*/
+}
 
 /*public class LightningThread implements Runnable {
  

@@ -32,14 +32,14 @@ void setup()
 
 void draw()
 {
-  lightning();
+  //lightning();
   //snake();
 }
 
 void lightning() {
   move2++;
   if (move2 == 10) {
-    //clear();
+    clear();
     //color(255, 255, 0);
     //LightningThread lightning = LightningThread.createAndStart("Lightning");
     strokeWeight(10);
@@ -122,6 +122,7 @@ void keyPressed() {
     } else if (keyCode == RIGHT) {
       changeDirection = "right";
     }
+    lightning();
   }
 }
 

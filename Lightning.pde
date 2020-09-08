@@ -113,13 +113,13 @@ public static int[][] addX(int n, int[][] arr, int[] x) {
 
 void keyPressed() {
   if (key == CODED) {
-    if (keyCode == UP) {
+    if (keyCode == KeyEvent.VK_UP) {
       changeDirection = "up";
-    } else if (keyCode == DOWN) {
+    } else if (keyCode == KeyEvent.VK_DOWN) {
       changeDirection = "down";
-    } else if (keyCode == LEFT) {
+    } else if (keyCode == KeyEvent.VK_LEFT) {
       changeDirection = "left";
-    } else if (keyCode == RIGHT) {
+    } else if (keyCode == KeyEvent.VK_RIGHT) {
       changeDirection = "right";
     }
     lightning();

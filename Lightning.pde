@@ -33,7 +33,7 @@ void setup()
 void draw()
 {
   //lightning();
-  //snake();
+  snake();
 }
 
 void lightning() {

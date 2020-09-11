@@ -32,7 +32,7 @@ void setup()
 
 void draw()
 {
-  //lightning();
+  lightning();
   snake();
 }
 
@@ -56,10 +56,14 @@ void lightning() {
     endX = 150;
   }
   move2++;
+  
+  strokeWeight(10);
+  stroke(153);
+  square(snakePosition[0], snakePosition[1], 10);
 }
 
 void snake() {
-  if (move % 10 == 0) {
+  if (move % 1 == 0) {
     /*if (changeDirection == "right" && direction != "left") direction = changeDirection;
     if (changeDirection == "left" && direction != "right") direction = changeDirection;
     if (changeDirection == "up" && direction != "down") direction = changeDirection;

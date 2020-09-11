@@ -33,7 +33,7 @@ void setup()
 void draw()
 {
   lightning();
-  //snake();
+  snake();
 }
 
 void lightning() {
@@ -59,8 +59,7 @@ void lightning() {
 }
 
 void snake() {
-  move++;
-  if (move == 10) {
+  if (move % 10 == 5) {
     if (changeDirection == "right" && direction != "left") direction = changeDirection;
     if (changeDirection == "left" && direction != "right") direction = changeDirection;
     if (changeDirection == "up" && direction != "down") direction = changeDirection;
@@ -79,8 +78,8 @@ void snake() {
       square(snakeSegments[n][0], snakeSegments[n][1], 10);
     }*/
     square(snakePosition[0], snakePosition[1], 10);
-    move = 0;
   }
+  move++;
 }
 
 public static int[][] addX(int n, int[][] arr, int[] x) { 

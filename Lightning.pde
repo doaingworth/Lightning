@@ -35,11 +35,11 @@ void setup()
 void draw()
 {
   lightning();
-  //snake();
+  snake();
 }
 
 void lightning() {
-  if (move2 % 10 == 0) {
+  if (move2 % 100 == 0) {
     //clear();
     //color(255, 255, 0);
     //LightningThread lightning = LightningThread.createAndStart("Lightning");
@@ -66,7 +66,7 @@ void lightning() {
 
 void snake() {
   if (move % 1 == 0) {
-    /*if (changeDirection == "right" && direction != "left") direction = changeDirection;
+    if (changeDirection == "right" && direction != "left") direction = changeDirection;
     if (changeDirection == "left" && direction != "right") direction = changeDirection;
     if (changeDirection == "up" && direction != "down") direction = changeDirection;
     if (changeDirection == "down" && direction != "up") direction = changeDirection;
@@ -75,7 +75,7 @@ void snake() {
     if (direction == "left") snakePositionX -= 10;
     if (direction == "down") snakePositionY += 10;
     if (direction == "up") snakePositionY -= 10;
-*/
+
     //snakeSegments = addX((int) snakeSegments.length, snakeSegments, snakePosition);
     
     //color(0, 255, 0);

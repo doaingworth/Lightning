@@ -15,6 +15,7 @@ int endX = 150;
 //Snake
 int snakePositionX = 150;
 int snakePositionY = 150;
+float lightningLength = 30.0;
 int[][] snakeSegments = {{50, 50}, {50, 40}, {40, 40}};
 int[] raspberryPosition = {70, 70};
 int raspberrySpawned = 1;
@@ -45,8 +46,8 @@ void lightning() {
     strokeWeight(10);
     stroke(153);
     while (endX <= 300 && endY <= 300) {
-      endY = startY + (int) (Math.random() * 9.0);
-      endX = startX + (int) (Math.random() * 18.0) - 9;
+      endY = startY + (int) (Math.random() * lightningLength);
+      endX = startX + (int) (Math.random() * 2 * lightningLength) - lightningLength;
       line(startX, startY, endX, endY);
       startX = endX;
       startY = endY;

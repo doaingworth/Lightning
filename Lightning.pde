@@ -33,7 +33,7 @@ void setup()
 void draw()
 {
   lightning();
-  snake();
+  //snake();
 }
 
 void lightning() {
@@ -57,8 +57,6 @@ void lightning() {
   }
   move2++;
   
-  strokeWeight(10);
-  stroke(153);
   square(snakePosition[0], snakePosition[1], 10);
 }
 

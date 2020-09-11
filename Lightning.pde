@@ -69,18 +69,12 @@ void snake() {
     if (key == 'w' || key == 'W') {
       changeDirection = "up";
     }
-  } else if (keyPressed) {
-    if (key == 'a' || key == 'A') {
+  } else if (key == 'a' || key == 'A') {
       changeDirection = "left";
-    }
-  } else if (keyPressed) {
-    if (key == 's' || key == 'S') {
+  } else if (key == 's' || key == 'S') {
       changeDirection = "down";
-    }
-  } else if (keyPressed) {
-    if (key == 'd' || key == 'D') {
+  } else if (key == 'd' || key == 'D') {
       changeDirection = "right";
-    }
   }
   if (move % 10 == 0) {
     if (changeDirection == "right" && direction != "left") direction = changeDirection;

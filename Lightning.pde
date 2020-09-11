@@ -58,6 +58,7 @@ void lightning() {
   }
   move2++;
   
+  fill(153);
   square(snakePositionX, snakePositionY, 10);
 }
 
@@ -79,8 +80,8 @@ void snake() {
     /*for (int n = 0; n <= snakeSegments.length/2; n++) {
       square(snakeSegments[n][0], snakeSegments[n][1], 10);
     }*/
-    strokeWeight(10);
-    stroke(153);
+    
+    fill(153);
     square(snakePositionX, snakePositionY, 10);
   }
   move++;

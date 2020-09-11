@@ -15,7 +15,7 @@ int endX = 150;
 //Snake
 float snakePositionX = 150;
 float snakePositionY = 150;
-float lightningLength = 50.0;
+float lightningLength = 9.0;
 int[][] snakeSegments = {{50, 50}, {50, 40}, {40, 40}};
 int[] raspberryPosition = {70, 70};
 int raspberrySpawned = 1;

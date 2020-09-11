@@ -13,9 +13,9 @@ int endY = 0;
 int endX = 150;
 
 //Snake
-int snakePositionX = 150;
-int snakePositionY = 150;
-float lightningLength = 30.0;
+float snakePositionX = 150;
+float snakePositionY = 150;
+float lightningLength = 50.0;
 int[][] snakeSegments = {{50, 50}, {50, 40}, {40, 40}};
 int[] raspberryPosition = {70, 70};
 int raspberrySpawned = 1;
@@ -61,7 +61,7 @@ void lightning() {
   
   fill(153);
   //square(snakePositionX, snakePositionY, 10);
-  rect(30, 20, 55, 55);
+  rect(snakePositionX, snakePositionY, 10, 10);
 }
 
 void snake() {
@@ -85,7 +85,7 @@ void snake() {
     
     fill(153);
     //square(snakePositionX, snakePositionY, 10);
-    rect(30, 20, 55, 55);
+    rect(snakePositionX, snakePositionY, 10, 10);
   }
   move++;
 }

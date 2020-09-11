@@ -13,8 +13,8 @@ int endY = 0;
 int endX = 150;
 
 //Snake
-int snakePositionX = 50;
-int snakePositionY = 50;
+int snakePositionX = 150;
+int snakePositionY = 150;
 int[][] snakeSegments = {{50, 50}, {50, 40}, {40, 40}};
 int[] raspberryPosition = {70, 70};
 int raspberrySpawned = 1;
@@ -82,7 +82,8 @@ void snake() {
     }*/
     
     fill(153);
-    square(snakePositionX, snakePositionY, 10);
+    //square(snakePositionX, snakePositionY, 10);
+    rect(30, 20, 55, 55);
   }
   move++;
 }

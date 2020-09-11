@@ -13,7 +13,8 @@ int endY = 0;
 int endX = 150;
 
 //Snake
-int[] snakePosition = {50, 50};
+int snakePositionX = 50;
+int snakePositionY = 50;
 int[][] snakeSegments = {{50, 50}, {50, 40}, {40, 40}};
 int[] raspberryPosition = {70, 70};
 int raspberrySpawned = 1;
@@ -57,7 +58,7 @@ void lightning() {
   }
   move2++;
   
-  square(snakePosition[0], snakePosition[1], 10);
+  square(snakePositionX, snakePositionY, 10);
 }
 
 void snake() {
@@ -67,21 +68,20 @@ void snake() {
     if (changeDirection == "up" && direction != "down") direction = changeDirection;
     if (changeDirection == "down" && direction != "up") direction = changeDirection;
 
-    if (direction == "right") snakePosition[0] += 10;
-    if (direction == "left") snakePosition[0] -= 10;
-    if (direction == "down") snakePosition[1] += 10;
-    if (direction == "up") snakePosition[1] -= 10;
+    if (direction == "right") snakePositionX += 10;
+    if (direction == "left") snakePositionX -= 10;
+    if (direction == "down") snakePositionY += 10;
+    if (direction == "up") snakePositionY -= 10;
 */
     //snakeSegments = addX((int) snakeSegments.length, snakeSegments, snakePosition);
     
-    //System.out.println(snakePosition);
     //color(0, 255, 0);
     /*for (int n = 0; n <= snakeSegments.length/2; n++) {
       square(snakeSegments[n][0], snakeSegments[n][1], 10);
     }*/
     strokeWeight(10);
     stroke(153);
-    square(snakePosition[0], snakePosition[1], 10);
+    square(snakePositionX, snakePositionY, 10);
   }
   move++;
 }

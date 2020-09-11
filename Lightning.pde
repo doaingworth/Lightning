@@ -39,7 +39,7 @@ void draw()
 void lightning() {
   move2++;
   if (1) { //move2 == 10) {
-    clear();
+    //clear();
     //color(255, 255, 0);
     //LightningThread lightning = LightningThread.createAndStart("Lightning");
     strokeWeight(10);

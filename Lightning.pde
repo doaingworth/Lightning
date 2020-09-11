@@ -103,8 +103,7 @@ public static int[][] addX(int n, int[][] arr, int[] x) {
   return newarr;
 } 
 
-/*void mousePressed()
-{
+/*void mousePressed() {
   startY = 0;
   startX = 159;
   endY = 0;
@@ -130,26 +129,26 @@ void keyPressed() {
  
  Thread thrd;
  public static LightningThread createAndStart(String name) {
- LightningThread myThrd = new LightningThread(name);
+   LightningThread myThrd = new LightningThread(name);
  
- myThrd.thrd.start();
- return myThrd;
+   myThrd.thrd.start();
+   return myThrd;
  }
  
  LightningThread(String name) {
- thrd = new Thread(this, name);
+   thrd = new Thread(this, name);
  }
  
  
  public void run() {
- strokeWeight(10);
- stroke(153);
- while (endX <= 300 && endY <= 300) {
- endY = startY + (int) (Math.random() * 9.0);
- endX = startX + (int) (Math.random() * 18.0) - 9;
- line(startX, startY, endX, endY);
- startX = endX;
- startY = endY;
+   strokeWeight(10);
+   stroke(153);
+   while (endX <= 300 && endY <= 300) {
+     endY = startY + (int) (Math.random() * 9.0);
+     endX = startX + (int) (Math.random() * 18.0) - 9;
+     line(startX, startY, endX, endY);
+     startX = endX;
+     startY = endY;
+   }
  }
- }
- }*/
+}*/

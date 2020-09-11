@@ -38,7 +38,7 @@ void draw()
 
 void lightning() {
   move2++;
-  if (move2 == 10) {
+  if (1) { //move2 == 10) {
     clear();
     //color(255, 255, 0);
     //LightningThread lightning = LightningThread.createAndStart("Lightning");
@@ -51,11 +51,11 @@ void lightning() {
       startX = endX;
       startY = endY;
     }
-  startY = 0;
-  startX = 159;
-  endY = 0;
-  endX = 150;
-  move2 = 0;
+    startY = 0;
+    startX = 159;
+    endY = 0;
+    endX = 150;
+    move2 = 0;
   }
 }
 

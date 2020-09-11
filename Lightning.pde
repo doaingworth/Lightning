@@ -59,7 +59,8 @@ void lightning() {
   move2++;
   
   fill(153);
-  square(snakePositionX, snakePositionY, 10);
+  //square(snakePositionX, snakePositionY, 10);
+  rect(30, 20, 55, 55);
 }
 
 void snake() {

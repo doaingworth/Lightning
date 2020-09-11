@@ -60,7 +60,7 @@ void lightning() {
 
 void snake() {
   if (move % 10 == 0) {
-    if (changeDirection == "right" && direction != "left") direction = changeDirection;
+    /*if (changeDirection == "right" && direction != "left") direction = changeDirection;
     if (changeDirection == "left" && direction != "right") direction = changeDirection;
     if (changeDirection == "up" && direction != "down") direction = changeDirection;
     if (changeDirection == "down" && direction != "up") direction = changeDirection;
@@ -69,7 +69,7 @@ void snake() {
     if (direction == "left") snakePosition[0] -= 10;
     if (direction == "down") snakePosition[1] += 10;
     if (direction == "up") snakePosition[1] -= 10;
-
+*/
     //snakeSegments = addX((int) snakeSegments.length, snakeSegments, snakePosition);
     
     //System.out.println(snakePosition);

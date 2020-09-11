@@ -77,6 +77,8 @@ void snake() {
     /*for (int n = 0; n <= snakeSegments.length/2; n++) {
       square(snakeSegments[n][0], snakeSegments[n][1], 10);
     }*/
+    strokeWeight(10);
+    stroke(153);
     square(snakePosition[0], snakePosition[1], 10);
   }
   move++;

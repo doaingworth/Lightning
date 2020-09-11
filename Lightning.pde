@@ -37,7 +37,7 @@ void draw()
 }
 
 void lightning() {
-  if (move2 % 10 == 0) {
+  if (move2 % 100 == 0) {
     //clear();
     //color(255, 255, 0);
     //LightningThread lightning = LightningThread.createAndStart("Lightning");

@@ -37,8 +37,7 @@ void draw()
 }
 
 void lightning() {
-  move2++;
-  if (1) { //move2 == 10) {
+  if (move2 % 10 == 0) {
     //clear();
     //color(255, 255, 0);
     //LightningThread lightning = LightningThread.createAndStart("Lightning");
@@ -55,8 +54,8 @@ void lightning() {
     startX = 159;
     endY = 0;
     endX = 150;
-    move2 = 0;
   }
+  move2++;
 }
 
 void snake() {

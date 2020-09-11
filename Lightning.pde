@@ -32,8 +32,8 @@ void setup()
 
 void draw()
 {
-  //lightning();
-  snake();
+  lightning();
+  //snake();
 }
 
 void lightning() {
